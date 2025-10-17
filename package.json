@@ -9,8 +9,7 @@
     "lint": "eslint .",
     "start": "cross-env HOST=0.0.0.0 PORT=${PORT:-3000} node server.js",
     "start:next": "cross-env HOST=0.0.0.0 PORT=${PORT:-3000} next start -p $PORT"
-  },
-	  
+  }, 
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "1.2.2",
