@@ -7,6 +7,13 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, TrendingDown, AlertCircle, Target } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { generatePageMetadata } from "@/lib/seo"
+
+export const metadata = generatePageMetadata(
+  "Charles Van den Driessche - Data Driving & AI",
+  "Expert en intelligence artificielle, automatisation et marketing data-driven pour PME et ETI B2B. Découvrez mes services en IA agentique et marketing direct.",
+  "",
+)
 
 export default function Home() {
   return (

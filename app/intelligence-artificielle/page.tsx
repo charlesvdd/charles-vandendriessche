@@ -3,6 +3,13 @@ import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/contact-section"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Bot, Sparkles, Workflow, MessageSquare, Code, Network, CheckCircle2, Database } from "lucide-react"
+import { generatePageMetadata } from "@/lib/seo"
+
+export const metadata = generatePageMetadata(
+  "Intelligence Artificielle Agentique - Charles Van den Driessche",
+  "Systèmes multi-agents autonomes, RAG et automatisation intelligente. Découvrez l'Agentic AI et ses applications concrètes pour votre entreprise.",
+  "/intelligence-artificielle",
+)
 
 export default function IntelligenceArtificiellePage() {
   return (

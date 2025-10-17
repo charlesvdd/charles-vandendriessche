@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button"
 import { ExternalLink, BookOpen, Code, Linkedin, Twitter, Youtube, Music } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { generatePageMetadata } from "@/lib/seo"
+
+export const metadata = generatePageMetadata(
+  "À Propos - Charles Van den Driessche",
+  "Découvrez mon parcours et mes projets en intelligence artificielle et automatisation. Publications, réseaux sociaux et ressources.",
+  "/a-propos",
+)
 
 export default function AProposPage() {
   return (
