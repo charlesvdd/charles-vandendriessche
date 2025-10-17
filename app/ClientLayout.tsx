@@ -4,8 +4,8 @@ import type React from "react"
 
 import { Montserrat, Open_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ThemeProvider } from "@/components/theme-provider"
 
-// <CHANGE> Updated fonts to match brand charter
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -23,14 +23,16 @@ export default function ClientLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className={`${openSans.className} antialiased`}>
         <style jsx global>{`
           :root {
             --font-heading: ${montserrat.style.fontFamily};
           }
         `}</style>
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
