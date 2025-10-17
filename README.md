@@ -38,7 +38,7 @@ Il n’existe pas aujourd’hui de fonction native dans v0 qui insère automatiq
 - **Après chaque export depuis v0** : Crée un script ou une checklist que tu exécutes systématiquement pour insérer (ou vérifier) la présence d’un `server.js` adapté dans chaque nouveau projet généré.
 - Place ce serveur minimal dans un dossier "snippets" ou "bases" de ton organisation, puis copie-le à la racine du projet à chaque nouvelle génération.[2]
 - **Exemple pour le fichier `server.js` :**
-  ```js
+  \`\`\`js
   const { createServer } = require('http');
   const next = require('next');
   const app = next({ dev: false });
@@ -49,11 +49,11 @@ Il n’existe pas aujourd’hui de fonction native dans v0 qui insère automatiq
       handle(req, res);
     }).listen(process.env.PORT || 3000);
   });
-  ```
+  \`\`\`
 - Tu peux aussi automatiser cela via un script bash/node :
-  ```bash
+  \`\`\`bash
   cp ~/templates/server.js ./server.js
-  ```
+  \`\`\`
 
 ***
 
