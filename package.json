@@ -9,7 +9,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": ">=18 <21"
+    "node": ">=18 <23"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.9",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8.5",
