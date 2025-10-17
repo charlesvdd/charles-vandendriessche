@@ -6,10 +6,11 @@
     "build": "next build",
     "dev": "next dev -p 3000",
     "lint": "eslint .",
-    "start": "node server.js"
+    "start": "cross-env HOST=0.0.0.0 PORT=${PORT:-3000} node server.js",
+    "start:next": "cross-env HOST=0.0.0.0 PORT=${PORT:-3000} next start -p $PORT"
   },
   "engines": {
-    "node": ">=18 <23"
+    "node": ">=22 <23"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -39,7 +40,6 @@
     "@radix-ui/react-toast": "1.2.4",
     "@radix-ui/react-toggle": "1.1.1",
     "@radix-ui/react-toggle-group": "1.1.1",
-    "@radix-ui/react-tooltip": "1.1.6",
     "@vercel/analytics": "latest",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
@@ -61,11 +61,12 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
-    "zod": "3.25.76"
+    "zod": "3.25.76",
+    "cross-env": "^7.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.9",
-    "@types/node": "^22",
+    "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8.5",
