@@ -182,7 +182,7 @@ export default function DataDrivingPage() {
                     <p className="text-sm text-muted-foreground">Support et accompagnement personnalisé</p>
                   </div>
                 </div>
-                <div className="pt-4">
+                <div className="pt-4 flex justify-center">
                   <a
                     href="https://neomnia.net"
                     target="_blank"
