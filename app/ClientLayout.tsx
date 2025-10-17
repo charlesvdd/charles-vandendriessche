@@ -5,6 +5,7 @@ import type React from "react"
 import { Montserrat, Open_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
+import { BackToTop } from "@/components/back-to-top"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function ClientLayout({
         `}</style>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
+          <BackToTop />
         </ThemeProvider>
         <Analytics />
       </body>
