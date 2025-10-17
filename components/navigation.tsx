@@ -25,9 +25,7 @@ export function Navigation() {
               <span className="text-lg font-bold leading-tight whitespace-nowrap text-[var(--neomnia-black)]">
                 Charles Van den Driessche
               </span>
-              <span className="text-xs text-[var(--neomnia-gray-dark)] whitespace-nowrap">
-                Expert IA & Automatisation
-              </span>
+              <span className="text-xs text-[var(--neomnia-gray-dark)] whitespace-nowrap">Data Driving & AI</span>
             </div>
           </Link>
 
