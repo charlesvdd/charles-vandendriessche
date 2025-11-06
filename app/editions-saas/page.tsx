@@ -4,30 +4,6 @@ import { ContactSection } from "@/components/contact-section"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Rocket, Users, CreditCard, Shield, Zap, Code2, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Éditions de SaaS - Templates et Solutions sur Mesure | Charles Vandendriessche",
-  description:
-    "Lancez votre SaaS rapidement avec NeoSaaS, un template prêt à l'emploi. Authentification, paiements Stripe, gestion utilisateurs et architecture moderne inclus.",
-  keywords: [
-    "SaaS",
-    "template SaaS",
-    "NeoSaaS",
-    "développement SaaS",
-    "Next.js",
-    "TypeScript",
-    "Stripe",
-    "authentification",
-    "startup",
-    "MVP",
-  ],
-  openGraph: {
-    title: "Éditions de SaaS - Templates et Solutions sur Mesure",
-    description: "Lancez votre SaaS rapidement avec NeoSaaS, un template prêt à l'emploi.",
-    type: "website",
-  },
-}
 
 export default function EditionsSaasPage() {
   return (

@@ -18,31 +18,6 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Marketing Direct B2B - RAG et IA Générative | Charles Vandendriessche",
-  description:
-    "Développez votre activité B2B avec une approche marketing ciblée propulsée par l'IA et la RAG. Prospection intelligente, séquençage multi-canal et conformité RGPD avec Mission Croissance.",
-  keywords: [
-    "marketing direct",
-    "marketing B2B",
-    "RAG",
-    "IA générative",
-    "prospection",
-    "génération de leads",
-    "Mission Croissance",
-    "automatisation marketing",
-    "agents IA",
-    "RGPD",
-    "séquençage multi-canal",
-  ],
-  openGraph: {
-    title: "Marketing Direct B2B - RAG et IA Générative",
-    description: "Développez votre activité B2B avec une approche marketing ciblée propulsée par l'IA et la RAG.",
-    type: "website",
-  },
-}
 
 export default function MarketingPage() {
   return (

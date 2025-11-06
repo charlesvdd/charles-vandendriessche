@@ -4,30 +4,6 @@ import { ContactSection } from "@/components/contact-section"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Database, TrendingUp, Target, Zap, BarChart3, Brain } from "lucide-react"
 import Image from "next/image"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Data Driving - Transformez vos données en décisions stratégiques | Charles Vandendriessche",
-  description:
-    "Exploitez le potentiel de vos données grâce à l'automatisation et l'intelligence artificielle. Collecte automatisée, agents IA intelligents et décisions éclairées avec Neomnia Studio.",
-  keywords: [
-    "data driving",
-    "intelligence artificielle",
-    "automatisation",
-    "analyse de données",
-    "agents IA",
-    "décisions stratégiques",
-    "Neomnia Studio",
-    "data-driven",
-    "business intelligence",
-  ],
-  openGraph: {
-    title: "Data Driving - Transformez vos données en décisions stratégiques",
-    description:
-      "Exploitez le potentiel de vos données grâce à l'automatisation et l'intelligence artificielle avec Neomnia Studio.",
-    type: "website",
-  },
-}
 
 export default function DataDrivingPage() {
   return (
@@ -182,7 +158,7 @@ export default function DataDrivingPage() {
                     <p className="text-sm text-muted-foreground">Support et accompagnement personnalisé</p>
                   </div>
                 </div>
-                <div className="pt-4 flex justify-center">
+                <div className="pt-4">
                   <a
                     href="https://neomnia.net"
                     target="_blank"

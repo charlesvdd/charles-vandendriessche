@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
-import { defaultMetadata } from "@/lib/seo"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -12,7 +11,11 @@ const montserrat = Montserrat({
   display: "swap",
 })
 
-export const metadata: Metadata = defaultMetadata
+export const metadata: Metadata = {
+  title: "Charles Van den Driessche - Expert IA & Automatisation",
+  description: "Expert en intelligence artificielle, automatisation et marketing data-driven pour PME et ETI B2B",
+  generator: "v0.app",
+}
 
 export default function RootLayout({
   children,
