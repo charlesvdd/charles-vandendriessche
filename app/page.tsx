@@ -1,5 +1,12 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
+import { StatsSection } from "@/components/stats-section"
+import { ProcessSection } from "@/components/process-section"
+import { UseCasesSection } from "@/components/use-cases-section"
+import { TestimonialsSection } from "@/components/testimonials-section"
+import { PricingSection } from "@/components/pricing-section"
+import { FAQSection } from "@/components/faq-section"
+import { CTAFinalSection } from "@/components/cta-final-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
@@ -13,6 +20,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <StatsSection />
 
       {/* Problem Statement Section for B2B Companies */}
       <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
@@ -265,7 +273,14 @@ export default function Home() {
         </div>
       </section>
 
+      <ProcessSection />
+      <UseCasesSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <FAQSection />
+
       <ContactSection />
+      <CTAFinalSection />
       <Footer />
     </main>
   )
