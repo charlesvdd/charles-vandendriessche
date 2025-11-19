@@ -5,15 +5,23 @@ import "./globals.css"
 import ClientLayout from "./ClientLayout"
 
 import { GoogleTagManager } from '@next/third-parties/google'
-import { Montserrat, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next"
+
+import { Montserrat, Open_Sans, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
 // Initialize fonts
 const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-sans",
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-montserrat",
+  display: "swap",
+})
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
   display: "swap",
 })
 
@@ -42,13 +50,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "GTM-KC56PHH"
 
   return (
-    <html lang="fr" className={montserrat.variable}>
-      <body>
+    <html lang="fr" className={`${montserrat.variable} ${openSans.variable}`}>
+      <body className={`${openSans.className} antialiased`}>
+        <style jsx global>{`
+          :root {
+            --font-heading: ${montserrat.style.fontFamily};
+          }
+        `}</style>
         <ClientLayout>{children}</ClientLayout>
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
+        <GoogleTagManager gtmId={gtmId} />
+        <Analytics />
       </body>
     </html>
   )
