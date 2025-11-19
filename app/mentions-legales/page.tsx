@@ -35,8 +35,8 @@ export default function MentionsLegalesPage() {
                   </p>
                   <p>
                     <strong className="text-foreground">Email :</strong>{" "}
-                    <a href="mailto:vandendriesschecharles@gmail.com" className="hover:underline">
-                      vandendriesschecharles@gmail.com
+                    <a href="mailto:contact@charles-vandendriessche.fr" className="hover:underline">
+                      contact@charles-vandendriessche.fr
                     </a>
                   </p>
                 </CardContent>
@@ -95,8 +95,8 @@ export default function MentionsLegalesPage() {
                   </p>
                   <p className="leading-relaxed">
                     Pour exercer ces droits, vous pouvez nous contacter à l'adresse email :{" "}
-                    <a href="mailto:vandendriesschecharles@gmail.com" className="hover:underline">
-                      vandendriesschecharles@gmail.com
+                    <a href="mailto:contact@charles-vandendriessche.fr" className="hover:underline">
+                      contact@charles-vandendriessche.fr
                     </a>
                   </p>
                   <p className="leading-relaxed">

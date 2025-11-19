@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar, Mail, Phone } from "lucide-react"
+import { ArrowRight, Calendar, Mail } from 'lucide-react'
 import Link from "next/link"
 
 export function CTAFinalSection() {
@@ -15,7 +15,7 @@ export function CTAFinalSection() {
           Commençons avec une consultation gratuite de 30 minutes.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
           <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/20 transition-colors">
             <Calendar className="h-8 w-8 text-[var(--neomnia-green)] mx-auto mb-3" />
             <h3 className="text-white font-bold mb-2">Rendez-vous rapide</h3>
@@ -26,12 +26,6 @@ export function CTAFinalSection() {
             <Mail className="h-8 w-8 text-[var(--neomnia-green)] mx-auto mb-3" />
             <h3 className="text-white font-bold mb-2">Audit gratuit</h3>
             <p className="text-gray-300 text-sm">Analyse de votre situation</p>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/20 transition-colors">
-            <Phone className="h-8 w-8 text-[var(--neomnia-green)] mx-auto mb-3" />
-            <h3 className="text-white font-bold mb-2">Support 24/48h</h3>
-            <p className="text-gray-300 text-sm">Réponse rapide à vos questions</p>
           </div>
         </div>
 
@@ -45,7 +39,7 @@ export function CTAFinalSection() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
-          <Link href="mailto:contact@example.com">
+          <Link href="mailto:contact@charles-vandendriessche.fr">
             <Button
               size="lg"
               variant="outline"

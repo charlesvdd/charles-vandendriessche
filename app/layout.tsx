@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
+
 import { Montserrat, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
 // Initialize fonts
