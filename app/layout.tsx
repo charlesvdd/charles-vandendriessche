@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
 
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Montserrat, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
 // Initialize fonts
@@ -41,10 +42,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID
+
   return (
     <html lang="fr" className={montserrat.variable}>
       <body>
         <ClientLayout>{children}</ClientLayout>
+        {gtmId && <GoogleTagManager gtmId={gtmId} />}
       </body>
     </html>
   )
