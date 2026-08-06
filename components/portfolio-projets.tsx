@@ -21,14 +21,6 @@ const PROJECTS = [
     cta: "Voir sur GitHub",
   },
   {
-    icon: Rocket,
-    title: "Mission Croissance",
-    description: "Marketing direct et prospection B2B : listes ultra-qualifiées, organisation commerciale, croissance PME/ETI.",
-    href: "https://mission-croissance.fr",
-    accent: "var(--neomnia-orange)",
-    cta: "Découvrir le site",
-  },
-  {
     icon: BookOpen,
     title: "Newsletter Substack",
     description: "Articles et analyses sur l'IA, l'automatisation et les stratégies de croissance pour les entreprises B2B.",
