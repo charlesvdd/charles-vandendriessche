@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, FileDown } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const STATS = [
-  { value: "Dizaines", label: "d'entreprises accompagnées" },
-  { value: "3 secteurs", label: "Industrie, Commerce & Services" },
-  { value: "Croissance", label: "Transformation digitale mesurable" },
-  { value: "Sur-mesure", label: "Solutions adaptées à votre activité" },
+  { value: "IA générative", label: "LLM, RAG, agents multi-agents" },
+  { value: "Cloud & Kubernetes", label: "Azure, AWS, CI/CD, IaC" },
+  { value: "Data & MLOps", label: "Pipelines, gouvernance, observabilité" },
+  { value: "Architecture SI", label: "Cadrage, roadmaps, mentoring" },
 ]
 
 export function PortfolioHero() {
@@ -22,13 +23,12 @@ export function PortfolioHero() {
         />
 
         <h1 className="text-4xl md:text-5xl font-bold text-[var(--neomnia-black)] leading-tight text-balance mb-6">
-          Je mets l&apos;<span className="text-[var(--neomnia-green)]">IA appliquée</span> au service de vos
-          résultats
+          Architecte <span className="text-[var(--neomnia-green)]">IA</span> — LLM, systèmes multi-agents & RAG
         </h1>
 
         <p className="text-lg text-[var(--neomnia-gray-dark)] leading-relaxed text-balance mb-10 max-w-2xl mx-auto">
-          Spécialiste en marketing direct et intelligence artificielle, j&apos;accompagne les PME et ETI B2B pour
-          gagner en productivité et mieux maîtriser leurs données.
+          Architecte SI senior spécialiste de l&apos;IA générative et du RAG, je conçois et industrialise des
+          plateformes Data/IA robustes, souveraines et sécurisées.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -38,21 +38,22 @@ export function PortfolioHero() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </a>
-          <a href="#projets">
+          <Link href="/cv">
             <Button
               size="lg"
               variant="outline"
               className="border-[var(--neomnia-gray-light)] text-[var(--neomnia-black)] hover:border-[var(--neomnia-green)] hover:text-[var(--neomnia-green)] text-base px-8 bg-transparent"
             >
-              Voir mes projets
+              Voir mon CV
+              <FileDown className="ml-2 h-5 w-5" />
             </Button>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-[var(--neomnia-gray-light)]">
           {STATS.map((stat) => (
             <div key={stat.label}>
-              <div className="text-2xl font-bold text-[var(--neomnia-green)] mb-1">{stat.value}</div>
+              <div className="text-lg font-bold text-[var(--neomnia-green)] mb-1 text-balance">{stat.value}</div>
               <p className="text-sm text-[var(--neomnia-gray-dark)]">{stat.label}</p>
             </div>
           ))}

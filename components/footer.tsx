@@ -25,7 +25,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Spécialiste en IA, automatisation et marketing data-driven
+              Architecte IA — LLM, systèmes multi-agents, RAG & Cloud AI
             </p>
           </div>
 
@@ -35,23 +35,23 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <Link href="/data-driving" className="hover:text-[var(--neomnia-green)] transition-colors">
-                  Data Driving
+                <Link href="/#a-propos" className="hover:text-[var(--neomnia-green)] transition-colors">
+                  IA générative & LLM
                 </Link>
               </li>
               <li>
-                <Link href="/intelligence-artificielle" className="hover:text-[var(--neomnia-green)] transition-colors">
-                  Intelligence Artificielle
+                <Link href="/#a-propos" className="hover:text-[var(--neomnia-green)] transition-colors">
+                  Plateformes data & Cloud
                 </Link>
               </li>
               <li>
-                <Link href="/marketing" className="hover:text-[var(--neomnia-green)] transition-colors">
-                  Marketing
+                <Link href="/#parcours" className="hover:text-[var(--neomnia-green)] transition-colors">
+                  Architecture SI
                 </Link>
               </li>
               <li>
-                <Link href="/editions-saas" className="hover:text-[var(--neomnia-green)] transition-colors">
-                  Éditions de SaaS
+                <Link href="/cv" className="hover:text-[var(--neomnia-green)] transition-colors">
+                  CV complet
                 </Link>
               </li>
             </ul>
@@ -69,15 +69,6 @@ export function Footer() {
                   className="hover:text-[var(--neomnia-green)] transition-colors"
                 >
                   Neomnia Studio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://mission-croissance.fr"
-                  target="_blank"
-                  className="hover:text-[var(--neomnia-green)] transition-colors"
-                >
-                  Mission Croissance
                 </Link>
               </li>
               <li>
