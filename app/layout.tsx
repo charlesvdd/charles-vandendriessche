@@ -17,23 +17,26 @@ const montserrat = Montserrat({
   display: "swap",
 })
 
+const TITLE = "Charles Van den Driessche — Architecte IA"
+const DESCRIPTION =
+  "Architecte SI senior spécialiste de l'IA générative et du RAG (LLM, systèmes multi-agents, Cloud AI) — plateformes Data/IA robustes, souveraines et sécurisées."
+
 export const metadata: Metadata = {
-  title: "Charles Van den Driessche - Expert IA & Automatisation",
-  description: "Expert en intelligence artificielle, automatisation et marketing data-driven pour PME et ETI B2B",
-  generator: "v0.app",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://charles-vandendriessche.vercel.app"),
+  title: TITLE,
+  description: DESCRIPTION,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://charles-vandendriessche.fr"),
   openGraph: {
-    title: "Charles Van den Driessche - Expert IA & Automatisation",
-    description: "Expert en intelligence artificielle, automatisation et marketing data-driven pour PME et ETI B2B",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://charles-vandendriessche.vercel.app",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://charles-vandendriessche.fr",
     siteName: "Charles Van den Driessche",
     locale: "fr_FR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Charles Van den Driessche - Expert IA & Automatisation",
-    description: "Expert en intelligence artificielle, automatisation et marketing data-driven pour PME et ETI B2B",
+    title: TITLE,
+    description: DESCRIPTION,
   },
 }
 
