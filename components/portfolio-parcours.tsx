@@ -8,6 +8,7 @@ const MISSIONS = [
       "Architecture multi-tenant (séparation environnements/données par client) sur Kubernetes",
       "Sécurité & gouvernance : RBAC, networkPolicies, secrets centralisés",
       "Control Engine centralisé, observabilité, optimisation tokens & temps de réponse, alignement Zero Trust",
+      "Plateforme d'équipe d'agents métier : agents capables de rédiger sur l'outil de gestion de projet et d'interagir entre eux pour orchestrer le travail",
     ],
   },
   {
