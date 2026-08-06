@@ -48,7 +48,7 @@ const PROJECTS = [
 
 export function PortfolioProjets() {
   return (
-    <section id="projets" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+    <section id="projets" className="py-24 px-4 bg-[var(--neomnia-gray-light)]/20">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--neomnia-black)] text-balance">
           Projets & publications
