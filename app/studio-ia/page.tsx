@@ -210,7 +210,7 @@ export default function StudioIAPage() {
             Discutons de vos besoins et découvrez comment l'IA peut transformer votre activité
           </p>
           <a
-            href="https://outlook.office.com/book/RendezvousregularavecCharlesVandendriessche@neomnia.onmicrosoft.com/?ismsaljsauthenabled"
+            href="https://outlook.office.com/book/Gf022429a37ed48e1b0eedce5d566016c@neomnia.onmicrosoft.com/?ismsaljsauthenabled"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[var(--neomnia-green)] hover:bg-[var(--neomnia-green)]/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"

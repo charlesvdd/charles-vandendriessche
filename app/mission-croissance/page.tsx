@@ -257,7 +257,7 @@ export default function MissionCroissancePage() {
               </Button>
             </Link>
             <a
-              href="https://outlook.office.com/book/RendezvousregularavecCharlesVandendriessche@neomnia.onmicrosoft.com/?ismsaljsauthenabled"
+              href="https://outlook.office.com/book/Gf022429a37ed48e1b0eedce5d566016c@neomnia.onmicrosoft.com/?ismsaljsauthenabled"
               target="_blank"
               rel="noopener noreferrer"
             >
