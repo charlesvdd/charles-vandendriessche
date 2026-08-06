@@ -1,7 +1,7 @@
 import { SiteNav } from "@/components/site-nav"
 import { PortfolioHero } from "@/components/portfolio-hero"
 import { PortfolioAbout } from "@/components/portfolio-about"
-import { PortfolioExpertises } from "@/components/portfolio-expertises"
+import { PortfolioParcours } from "@/components/portfolio-parcours"
 import { PortfolioProjets } from "@/components/portfolio-projets"
 import { ContactSection } from "@/components/contact-section"
 import { PortfolioSocial } from "@/components/portfolio-social"
@@ -13,7 +13,7 @@ export default function Home() {
       <SiteNav />
       <PortfolioHero />
       <PortfolioAbout />
-      <PortfolioExpertises />
+      <PortfolioParcours />
       <PortfolioProjets />
       <ContactSection />
       <PortfolioSocial />

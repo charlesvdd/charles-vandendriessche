@@ -5,10 +5,11 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const LINKS = [
-  { href: "#a-propos", label: "À propos" },
-  { href: "#expertises", label: "Expertises" },
-  { href: "#projets", label: "Projets" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#a-propos", label: "À propos" },
+  { href: "/#parcours", label: "Parcours" },
+  { href: "/#projets", label: "Projets" },
+  { href: "/#contact", label: "Contact" },
+  { href: "/cv", label: "CV" },
 ]
 
 export function SiteNav() {
@@ -18,7 +19,7 @@ export function SiteNav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[var(--neomnia-gray-light)]">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="#top" className="text-sm font-bold text-[var(--neomnia-black)]">
+          <Link href="/#top" className="text-sm font-bold text-[var(--neomnia-black)]">
             Charles Van den Driessche
           </Link>
 
