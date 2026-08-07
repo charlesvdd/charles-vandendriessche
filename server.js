@@ -1,4 +1,4 @@
-// Minimal custom server for Next.js under Plesk/Passenger (CommonJS)
+// Minimal custom server for Next.js (Dokploy / Docker)
 const { createServer } = require('http');
 const next = require('next');
 

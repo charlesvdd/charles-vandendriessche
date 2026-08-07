@@ -11,6 +11,8 @@ WORKDIR /app
 RUN corepack enable
 RUN corepack prepare pnpm@10.34.4 --activate
 
+ENV NEXT_PUBLIC_SITE_URL=https://charles-vandendriessche.fr
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN pnpm build
@@ -22,11 +24,13 @@ RUN corepack prepare pnpm@10.34.4 --activate
 
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV NEXT_PUBLIC_SITE_URL=https://charles-vandendriessche.fr
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/next.config.mjs ./next.config.mjs
 COPY --from=builder /app/server.js ./server.js
 
 EXPOSE 3000
