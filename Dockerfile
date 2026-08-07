@@ -12,6 +12,7 @@ RUN corepack enable
 RUN corepack prepare pnpm@10.34.4 --activate
 
 ENV NEXT_PUBLIC_SITE_URL=https://charles-vandendriessche.fr
+ENV NEXT_PUBLIC_GTM_ID=GTM-KC56PHH
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -25,6 +26,7 @@ RUN corepack prepare pnpm@10.34.4 --activate
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV NEXT_PUBLIC_SITE_URL=https://charles-vandendriessche.fr
+ENV NEXT_PUBLIC_GTM_ID=GTM-KC56PHH
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next

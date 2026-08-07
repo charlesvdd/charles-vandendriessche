@@ -49,18 +49,18 @@ export const metadata: Metadata = {
   },
 }
 
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-KC56PHH"
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID
-
   return (
     <html lang="fr" className={montserrat.variable}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body>
         <ClientLayout>{children}</ClientLayout>
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
       </body>
     </html>
   )
