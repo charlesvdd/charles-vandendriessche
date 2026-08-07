@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "node server.js"
+    "start": "node .next/standalone/server.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -73,6 +73,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=18 <21"
+    "node": ">=18"
   }
 }
